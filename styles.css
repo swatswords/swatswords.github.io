@@ -1,0 +1,75 @@
+
+
+    /* Navigation bar specifications*/
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(0, 0, 0); /*border color*/
+        border-radius: 20px; /*describes border curve*/
+        padding: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        font-family: Arial, verdana;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        margin-right: 10px;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all .3s ease;
+    }
+    nav a:hover {
+        color: rgb(234, 167, 167);
+    } 
+       /*image specifications*/
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .image {
+                margin: 30px;
+                width: 250px;
+                height: 350px;
+                object-fit: cover;
+                border: 8px solid white;
+                border-radius: 20px;
+                box-sizing: border-box; 
+
+                object-fit: cover; 
+                transition: all 0.3s ease;
+            }
+            
+            .image:hover {
+                    border-color: rgb(60, 57, 216); /* Change the border color on hover */
+                }
+                .image:hover {
+                    transform: scale(1.1); /* Scale up the image on hover */
+                }
+                    #image_2{
+                        width:300px;
+                       /* transform: scale(1.1); /* scale test */
+                      }
+                      #image_1{
+                    
+                        transform: scale(1.1); /* scale test */
+                      }
+                    #image_3{
+                        width:400px;
+                    }
+                  /*  #grad {
+                    background-image: linear-gradient(180deg, red, yellow);
+                            <img class="image" src="Sword Photos/Zuko_Sword-Vertical.jpg" alt="Image_1" id="image_1">
+
+                    } */
