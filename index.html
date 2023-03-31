@@ -4,74 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1><center style="font-family:verdana;font-size:60px"> SwatSwords</center> </h1> 
+    <style>
+        /* Navigation bar styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            font-family: Arial, verdana;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 10px;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: rgb(239, 173, 173);
+        } 
+           
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .image-container {
+                    margin: 20px;
+                    width: 250px;
+                    height: 350px;
+                    object-fit: cover;
+                    border: 8px solid white;
+                    border-radius: 20px;
+                    box-sizing: border-box;
+                }
+                .image-container:hover {
+                        border-color: rgb(60, 57, 216); /* Change the border color on hover */
+                    }
+                    .image {
+                        width: 15%;
+                        height: 15%; 
+                       /* object-fit: cover; */
+                        transition: all 0.3s ease;
+                        
+                    }
+                    .image:hover {
+                        transform: scale(1.1); /* Scale up the image on hover */
+    </style>     
 </head>
 
-<style>
-    /* Navigation bar styles */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-        border: 5px solid rgb(0, 0, 0);
-        border-radius: 20px;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        font-family: Arial, verdana;
-    }
-    nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    nav li {
-        margin-right: 10px;
-    }
-    nav a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px;
-        transition: all 0.3s ease;
-    }
-    nav a:hover {
-        color: rgb(239, 173, 173);
-    } 
-       
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-            }
-            .image-container {
-                margin: 20px;
-                width: 250px;
-                height: 350px;
-                object-fit: cover;
-                border: 8px solid white;
-                border-radius: 20px;
-                box-sizing: border-box;
-            }
-            .image-container:hover {
-                    border-color: rgb(60, 57, 216); /* Change the border color on hover */
-                }
-                .image {
-                    width: 15%;
-                    height: 15%; 
-                   /* object-fit: cover; */
-                    transition: all 0.3s ease;
-                    
-                }
-                .image:hover {
-                    transform: scale(1.1); /* Scale up the image on hover */
-</style>
 
 
-<body>
-    <body style="background-color:rgb(225, 163, 190);"></body>
+
+<body style="background-color:rgb(225, 163, 190);">
+    <h1  style="font-family:verdana; font-size:60px;"><center> SwatSwords</center></h1>
     <nav>
 		<ul>
 			<li><a href="#">Home</a></li>
@@ -84,7 +84,7 @@
 		</ul>
 	</nav>
 
-	<center style="font-family:verdana;font-size:15px h1> Local woodworker and metalsmith at Swarthmore College focused on making prop swords and weapons from history and popular media </h1>
+	<h1 style="font-family:verdana;font-size:15px;"><center>Local woodworker and metalsmith at Swarthmore College focused on making prop swords and weapons from history and popular media</center></h1>
 	<div class="container">
 		<img class="image" src="Sword Photos/Stinger_LOTR.jpg" alt="Image 1">
 		<img class="image" src="Sword Photos/Elucidator_Sword.jpg" alt="Image 2">
