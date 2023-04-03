@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    
+    <style>
+.container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .image {
+                margin: 30px;
+                width: auto;
+                height: 250px;
+                object-fit: scale-down;
+                border: 8px solid white;
+                border-radius: 10px;
+                box-sizing: border-box; 
+                transition: all 0.3s ease;
+            }
+            
+            .image:hover {
+                    border-color: rgb(60, 57, 216); /* Change the border color on hover */
+                }
+                .image:hover {
+                    transform: scale(1.1); /* Scale up the image on hover */
+                }
+                   
+
+
+    </style>
         
 <body>
     
     <body style= "background-image: linear-gradient(rgb(360, 167, 125), rgb(227, 193, 193));  border: 8px solid rgb(255, 255, 255); border-radius: 20px; box-sizing: border-box; ";>    
         <h1  style="font-family:verdana; font-size:60px;"><center> SwatSwords</center></h1>
             
+        
     
         <nav>
             <ul>
@@ -27,15 +55,14 @@
             </ul>
         </nav>
     
-       
     
             <h2 style="font-family:verdana;font-size:30px;"><center>All Swords:</center></h2>
         <div class="container">
-            <img class="image" src="Sword Photos/Elucidator_Sword.jpg" alt="Image 2" id="image_2">
-            <img class="image" src="Sword Photos/Twin_Zuko_Swords.jpg" alt="Image 3" id="image_3">
-            <img class="image" src="Sword Photos/Stop_Sign_Axe.jpg" alt="Image 4" id="image_4">
-            <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 5" id="image_5">
-            <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 6" id="image_6">
+            <img class="image" src="Sword Photos/Elucidator_Sword.jpg" alt="Image 2" id="Fimage_1">
+            <img class="image" src="Sword Photos/Twin_Zuko_Swords.jpg" alt="Image 3" id="Fimage_2">
+            <img class="image" src="Sword Photos/Stop_Sign_Axe.jpg" alt="Image 4" id="Fimage_3">
+            <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 5" id="Fimage_4">
+            <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 6" id="Fimage_5">
     
         </div>
         <div style="display: flex; justify-content: center; align-items: center;">
