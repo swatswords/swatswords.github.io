@@ -122,21 +122,17 @@
 		</ul>
 	</nav>
 
-    <div class="menu" id="menu">
-		<h2 style="font-family:verdana;font-size:20px;">Product Name</h2>
-		<p style="font-family:verdana;font-size:15px;">Price: $19.99</p>
-		<p style="font-family:verdana;font-size:15px;">Color: Red</p>
-	</div>
+    
         <script> 
-        function toggleMenu(){
-            var menu = document.getElementById("menu");
-            if(menu.style.display === "none"){
-                menu.style.display = "block";
+        function toggleMenu(menuId){
+            var menus = document.getElementByClassName("menu");
+            for(var i = 0; i < menus.length; i++){
+                menus[i].style.display = "none";
             }
-            else{
-                menu.style.display = "none";
+            var menu = document.getElementById(menuId);
+			menu.style.display = "block"; 
             }
-        }
+        
         
         </script>
         
@@ -144,13 +140,25 @@
     <div style="background-color: rgb(255, 255, 255); align-items: center; background-color: rgb(255, 255, 255); border: 5px solid rgb(0, 0, 0); border-radius: 10px; padding: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); "> 
     <h2 style="font-family:verdana;font-size:20px;"><center>Local woodworker and metalsmith at Swarthmore College focused on making prop swords and weapons from history and popular media</center> </h2>
     </div>
-
+            
         <h2 style="font-family:verdana;font-size:30px;"><center>Available Swords:</center></h2>
-    <div class="container">
-		<img class="image" src="Sword Photos/Elucidator_Sword.jpg" alt="Image 2" id="image_2" onclick="toggleMenu()">
-		<img class="image" src="Sword Photos/Twin_Zuko_Swords.jpg" alt="Image 3" id="image_3" onclick="toggleMenu()">
-        <img class="image" src="Sword Photos/Stop_Sign_Axe.jpg" alt="Image 4" id="image_4" onclick="toggleMenu()">
-        <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 5" id="image_5" onclick="toggleMenu()">
+                  
+                    <div class="menu" id="menu2">
+                        <h2 style="font-family:verdana;font-size:20px;">Elucidator Sword</h2>
+                        <p style="font-family:verdana;font-size:15px;">Price: $80.00</p>
+                        <p style="font-family:verdana;font-size:15px;">Color: Black 7 Silver</p>
+                        </div>
+                    <div class="menu" id="menu3">
+                        <h2 style="font-family:verdana;font-size:20px;">Twin Zuko Swords</h2>
+                        <p style="font-family:verdana;font-size:15px;">Price: $35.00 per sword</p>
+                        <p style="font-family:verdana;font-size:15px;">Color: Gold, Silver, Oak</p>
+                        </div>
+
+                 <div class="container">
+		<img class="image" src="Sword Photos/Elucidator_Sword.jpg" alt="Image 2" id="image_2" onclick="toggleMenu('menu2')">
+		<img class="image" src="Sword Photos/Twin_Zuko_Swords.jpg" alt="Image 3" id="image_3" onclick="toggleMenu('menu3')">
+        <img class="image" src="Sword Photos/Stop_Sign_Axe.jpg" alt="Image 4" id="image_4" onclick="toggleMenu('menu4')">
+        <img class="image" src="Sword Photos/Sword_in_grass.JPG" alt="Image 5" id="image_5" onclick="toggleMenu('menu5')">
 
 	</div>
     <div style="display: flex; justify-content: center; align-items: center;">
