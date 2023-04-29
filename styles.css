@@ -35,6 +35,12 @@
     nav a:hover {
         color: rgb(234, 167, 167);
     } 
+    .menu {
+        display: none; /* hide the menu by default */
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
        /*image specifications*/
             .container {
                 display: flex;
