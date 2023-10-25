@@ -10,8 +10,12 @@
             text-align: center;
         }
         .centeredcontent {
+            margin: 0;
+            position: absolute;
             top: 50%;
             left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
     <title>Embedded Website</title>
@@ -25,9 +29,10 @@
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
     <iframe src="https://calendar.google.com/calendar/embed?src=acorpus1%40swarthmore.edu&ctz=America%2FNew_York" style="border: 0" background-color= "rgb(245, 166, 195)" width="800" height="600" frameborder="5" scrolling="no"></iframe>
+    
     <div class = 'centeredcontent'>
     <iframe src="https://free.timeanddate.com/clock/i93031c1/n198/fn6/fs48/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="304" height="119"></iframe>
-        </div>
+    </div>
 
     <div>
         <h1>Cat Generator</h1>
