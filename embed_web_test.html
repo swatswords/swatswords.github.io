@@ -25,6 +25,10 @@
         .rightmade{
             float: right;
         }
+        .nextto{
+            display: flex;
+            justify-content: space-between;
+        }
         body{
             background-color: #a9cee5; /* Set the background color here */
         }
@@ -45,10 +49,13 @@
     <script>    
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
+
+    <div class = 'nextto'>
     <h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=acorpus1%40swarthmore.edu&ctz=America%2FNew_York" style="border: 0" background-color= "rgb(245, 166, 195)" width="800" height="600" frameborder="5" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?src=acorpus1%40swarthmore.edu&ctz=America%2FNew_York" style="border: 0" background-color= "rgb(245, 166, 195)" width="800" height="600" frameborder="5" scrolling="no" ></iframe>
     <iframe src="https://dash.swarthmore.edu/#Menus" width="50%" height="500"></iframe>
     </h2>
+    </div>
 
     <div>
         <h1>Cat Generator</h1>
