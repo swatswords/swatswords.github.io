@@ -62,6 +62,24 @@
     </h2>
     </div>
 
+    <!-- Create a container element to display the API data -->
+  <div id="apiData"></div>
+  
+  <!-- Include the API script -->
+  <script src="https://api.thecatapi.com/v1/images/search"></script>
+  
+  <!-- Write JavaScript to handle the API response -->
+  <script>
+    const URL = "https://api.thecatapi.com/v1/images/search"
+    async function make APICall{
+        const result = await fetch(URL)
+        result.json().then(data => {
+            console.log(data)
+        })
+    }
+    makeAPICall()
+  </script>
+
     <div>
         <h1>Human Generator</h1>
         <iframe src="https://thispersondoesnotexist.com/" width="50%" height = "50%" zoom = "0.5" overflow:hidden frameborder = "0"  allowfullscreen></iframe>
