@@ -18,22 +18,19 @@
             transform: translate(-50%, -50%);
         }
         .centeredtitle{
+            left: 50%;
             font-family: Arial, verdana;
+            align-items: center;
         }
         .rightmade{
             float: right;
         }
         .leftmade{
-            float: left;
+            float: left
         }
         .nextto{
             display: flex;
             justify-content: space-between;
-        }
-        .downtime{
-            justify-content: space-between;
-            top: 40%;
-
         }
         body{
             background-color: #a9cee5; /* Set the background color here */
@@ -42,21 +39,19 @@
     <title>Embedded Website</title>
 </head>
 <body>
-    <h1> <div class = "leftmade">
+    <h1> 
         <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ahl/ftb" frameborder="0" width="280" height="61" allowtransparency="true"></iframe>
-        </div>
         <div class = 'rightmade'>
         <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ftb/tt1/tw0" frameborder="0" width="459" height="61" allowtransparency="true"></iframe>
         </div>
     </h1>
+
 </body>
-
     <!-- Embedding a website -->
-        <a class="weatherwidget-io" href="https://forecast7.com/en/39d90n75d35/swarthmore/?unit=us" data-label_1="SWARTHMORE" data-label_2="WEATHER" data-theme="original" >SWARTHMORE WEATHER</a>
-            <script>    
-             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
-
+    <a class="weatherwidget-io" href="https://forecast7.com/en/39d90n75d35/swarthmore/?unit=us" data-label_1="SWARTHMORE" data-label_2="WEATHER" data-theme="original" >SWARTHMORE WEATHER</a>
+    <script>    
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
 
     <div class = 'nextto'>
     <h2>
