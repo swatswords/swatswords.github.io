@@ -9,60 +9,63 @@
         title {
             text-align: center;
         }
-        .centeredcontent {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 75%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        .centeredtitle{
-            left: 50%;
-            font-family: Arial, verdana;
-            align-items: center;
-        }
-        .rightmade{
-            float: right;
-        }
-        .leftmade{
-            float: left;
-        }
-        .middlemade{
-            left: 50%;
-        }
-        .nextto{
+        .container {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            margin: 20px;
         }
-        body{
+        .leftmade, .rightmade {
+            flex: 1;
+        }
+        .centeredtitle {
+            flex: 2;
+            text-align: center;
+        }
+        body {
             background-color: #a9cee5; /* Set the background color here */
+        }
+        .weather-widget {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
     <title>Embedded Website</title>
 </head>
 <body>
-    <h1> 
-        <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ahl/ftb" frameborder="0" width="280" height="61" allowtransparency="true"></iframe>
-        <div class = 'rightmade'>
-        <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ftb/tt1/tw0" frameborder="0" width="459" height="61" allowtransparency="true"></iframe>
+    <!-- Time, Logo, and Date in the same row -->
+    <div class="container">
+        <div class="leftmade">
+            <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ahl/ftb" frameborder="0" width="280" height="61" allowtransparency="true"></iframe>
         </div>
-    </h1>
     
+        <!-- Logo image section -->
+        <div class="centeredtitle">
+            <img src="AidanDigestLogo.png" alt="Reserved Aidan's Digest" style="width: 40vw; height: auto;">
+        </div>
+    
+        <div class="rightmade">
+            <iframe src="https://free.timeanddate.com/clock/i9321o6v/n198/fn6/fs48/tct/pct/ftb/tt1/tw0" frameborder="0" width="459" height="61" allowtransparency="true"></iframe>
+        </div>
+    </div>
 
-</body>
-    <!-- Embedding a website -->
-    <a class="weatherwidget-io" href="https://forecast7.com/en/39d90n75d35/swarthmore/?unit=us" data-label_1="SWARTHMORE" data-label_2="WEATHER" data-theme="original" >SWARTHMORE WEATHER</a>
+    <!-- Weather Widget below time, logo, and date -->
+    <div class="weather-widget">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/39d90n75d35/swarthmore/?unit=us" data-label_1="SWARTHMORE" data-label_2="WEATHER" data-theme="original">SWARTHMORE WEATHER</a>
+    </div>
     <script>    
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
 
+    <!-- The rest of your page content -->
+</body>
+</html>
+
+
     <div class = 'nextto'>
     <h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=acorpus1%40swarthmore.edu&ctz=America%2FNew_York"  background-color= "rgb(245, 166, 195)" width="800" height="600"  scrolling="no" ></iframe>
-      <div class = 'rightmade'>
-    <iframe src="https://dash.swarthmore.edu/menu/dining-center" width="230%" height="600"></iframe>
-      </div>
+    <iframe src="https://calendar.google.com/calendar/embed?src=acorpus1%40swarthmore.edu&ctz=America%2FNew_York"  background-color= "rgb(245, 166, 195)" width="500vw" height="600"  scrolling="no" ></iframe>
+    <iframe src="https://dash.swarthmore.edu/menu/dining-center" width="500vw" height="600"></iframe>
     </h2>
     </div>
 <!--
